@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+    <title>Assignment 3(String Operations)</title>
+</head>
+
+<body style="text-align: center;">
+
+    <table style="text-align: center; margin-left: 78%; border: 1px solid black;"> 
+        <tr><td> 42254 </td> <td> BE-6 R6 </td></tr> 
+        <tr ><td colspan="2">Prajwal Padwal</td></tr>
+    </table>
+
+    
+    <h1>String Operations</h1>
+    <h2>String Reversing</h2>
+
+    <table style="text-align: center; width: 70%; margin-left: 15% ">
+    <tr><td> 
+
+    <h3>Inbuilt methods</h3>
+    <label for="s1">Enter the String </label>
+    <input type="text" id="s1"placeholder="Enter String ">
+    <br>
+    <br>
+    <button onclick="Reverse()" class="class1">Click Here >></button><br>
+    <p>Reversed String =  <span id="display"></span></p>
+
+    </td>
+    <td>
+    <h3>Loops</h3>
+    <label for="sl">Enter the String </label>
+    <input type="text" id="sl"placeholder="Enter String ">
+    <br>
+    <br>
+    <button onclick="LoopReverse()" class="class2">Click Here >></button><br>
+    <p>String Reverse =  <span id="displayrev"></span></p>
+
+    </td></tr>
+    </table>
+    <h2>String Replace</h2>
+    <table style="text-align: center; width: 70%; margin-left: 15% ">
+    <tr><td>
+        
+    <h3>Replace Character</h3>
+    
+    <label for="s2">Enter String </label>
+    <input type="text" id="s2"placeholder="Enter String">
+    <br>
+     <br>
+     Enter Character to be replaced <input type="text" id="x" placeholder="Enter Character"><br><br>
+     Enter New Character <input type="text" id="y" placeholder="Enter New Character"><br><br>
+    <button onclick="ChangeChar()">Click Here >></button><br>
+    <p>String after character Changed = <span id="display1"></span></p>
+    </td>
+
+    <td style="border-spacing: 30%">
+    <h3>Substring Replace</h3>
+     Enter String<input type="text" id="subs"placeholder="Enter String"> <br> <br>
+     Enter Substring to be replaced <input type="text" id="subx" placeholder="Enter Substring"><br><br>
+     Enter New Substring <input type="text" id="suby" placeholder="Enter New Substring"><br><br>
+    <button onclick="ChangeSub()">Click Here >></button><br>
+    <p>New String = <span id="displaysub"></span></p>
+
+    </td></tr>
+    </table>
+
+    <br>
+   
+    <br>
+    <h3>Palindrome Checking </h3>
+    <label for="s3">Enter String:</label>
+    <input type="text" id="s3"placeholder="Enter String">
+    <br><br>
+
+    <button onclick="Palindrome()">Click Here >></button><br>
+    <p>Palindrome string = <span id="display2"></span></p>
+
+    <script src="expt3.js"></script>
+</body>
+
+</html>

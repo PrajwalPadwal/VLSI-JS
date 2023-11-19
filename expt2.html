@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table style="text-align: center; margin: left 78%;border: 1px solid black;">
+
+    </table>
+
+
+
+    <div style="text-align: center;">
+        <h2>
+            Multiplication Table using For loop
+        </h2>
+        Enter number <input type="text" id="num1"><br>
+        <input type="button" value="Calculate" onclick="FoorLoop()" id="for"><br>
+    </div>
+    <table id="FOR" style="text-align: center;border: 1px solid black; margin-left: 47%;">
+        
+    </table>
+
+
+
+    <div style="text-align: center;">
+        <h2>
+            Multiplication Table using While loop
+        </h2>
+        Enter Number <input type="text" id="num2"><br>
+        <input type="button" value="Calculate" onclick="WhileLoop()" id="while"><br>
+    </div>
+    <table id="WHILE" style="text-align: center;border: 1px solid black; margin-left: 47%;"></table>
+
+
+
+    <div style="text-align: center;">
+        <h2>
+            Multiplication Table using Do While loop
+        </h2>
+        Enter Number <input type="text" id="num3"> <br>
+        <input type="button" value="Calculate" onclick="DOWhileLoop()" id="DoWhile"><br>
+    </div>
+    <table id="DOWhile" style="text-align: center;border: 1px solid black; margin-left:47%;"></table>
+
+    <script>
+        function FoorLoop() {
+            let a = Number(document.getElementById("num1").value);
+            let str = "";
+
+            
+            for (i = 1; i <= 10; i++) {
+                str = str + "<tr>" + "<td>" + a + "*" + i + "=" + "</td>" + "<td>" + (a * i) + "</td>" + "</tr>";
+            }
+            document.getElementById("FOR").innerHTML = str;
+        }
+        function WhileLoop() {
+            let a2 = Number(document.getElementById("num2").value);
+            let str2 = "";
+            let i = 1;
+            while (i <= 10) {
+                str2 = str2 + "<tr>" + "<td>" + a + "*" + i + "=" + "</td>" + "<td>" + (a2 * i) + "</td>" + "</tr>";
+                i++;
+            }
+            document.getElementById("WHILE").innerHTML = str2;
+        }
+        function DoWhile() {
+            let a3 = Number(document.getElementById("num3").value);
+            let str3 = "";
+            let i = 1;
+
+            do {
+                str3 = str3 + "<tr>" + "<td>" + a + "*" + i + "=" + "</td>" + "<td>" + (a3 * i) + "</td>" + "</tr>";
+            }
+            while (i <= 10);
+            document.getElementById("DOWhile").innerHTML = str3;
+
+        }
+    </script>
+</body>
+
+</html>
